@@ -1,3 +1,4 @@
+
 const starContainer = document.querySelector('.star-container');
 const aura = document.querySelector('.aura');
 
@@ -90,4 +91,4 @@ function animateAura(){
 
   requestAnimationFrame(animateAura);
 }
-animateAura();
+
