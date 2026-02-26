@@ -1,22 +1,4 @@
-<<<<<<< HEAD
-body, html, #app {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
 
-body {
-  touch-action: none;
-}
-#canvas {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-}
-=======
 body {
   margin: 0;
   height: 100vh;
@@ -74,4 +56,4 @@ body {
     transparent 50%);
   transition: background 0.4s ease;
 }
->>>>>>> 4585f75 (falling stars background animation)
+
