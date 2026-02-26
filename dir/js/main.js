@@ -91,5 +91,4 @@ function animateAura(){
 
   requestAnimationFrame(animateAura);
 }
-animateAura();
 
