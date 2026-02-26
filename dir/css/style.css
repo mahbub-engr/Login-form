@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at center, #070716, #000);
+  overflow: hidden;
+  font-family: sans-serif;;
+}
+
+
+/* ⭐ Falling Stars */
+.star {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  background: white;
+  box-shadow: 0 0 6px white;
+  animation: fall linear forwards;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.star.tail {
+  width: 2px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, white, transparent);
+  box-shadow: 0 0 12px white;
+  opacity: 0.7;
+}
+
+@keyframes fall {
+  from { transform: translateY(-200px); opacity: 1; }
+  to { transform: translateY(120vh); opacity: 0.3; }
+}
+
+/* Twinkle Animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.aura {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  filter: blur(120px);
+  mix-blend-mode: screen;
+  background: radial-gradient(circle,
+    rgba(255,0,150,0.9),
+    rgba(0,255,255,0.7),
+    transparent 50%);
+  transition: background 0.4s ease;
+}
