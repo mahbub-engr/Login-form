@@ -13,18 +13,36 @@
 <body>
     <div class="star-container"></div>
     <div class="aura"></div>
-    <section class="content">
+    <section class="login d-flex flex-column justify-content-center">
         <div class="container">
-            <div class="row">
-                <div class="col-10">
-                    <div class="login-body">
-                        <div class="row">
-                            <h2>Hello</h2>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="login-body d-flex flex-column">
+                        <div class="tite mb-5">
+                            <h2>Welcome, Log into you account</h2>
+                        </div>
+                        <div class="login-form">
+                            <div class="row justify-content-center">
+                                <div class="col-6">
+                                    <div class="d-flex flex-column gap-3 text-center">
+                                        <p>It is our great pleasure to have you on board!</p>
+                                        <input type="text" placeholder="Enter the name of school">
+                                        <div class="password-box">
+                                            <input class="w-100" type="password" id="password" placeholder="Enter Password">
+                                            <span  id="toggleEye">👁️</span>
+                                        </div>
+                                        <button id="login">Login</button>
+                                        <p class="sighnup-text">Don't have an account? <a href="#" id="sign_up">Sign up</a></p>
+                                        <a href="#">Reset Pasaword</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
     <script src="dir/js/bootstrap.min.js"></script>
     <script src="dir/js/main.js" defer></script>
